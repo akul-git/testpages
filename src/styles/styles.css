@@ -308,9 +308,6 @@
   .h-9 {
     height: calc(var(--spacing) * 9);
   }
-  .h-10 {
-    height: calc(var(--spacing) * 10);
-  }
   .h-11 {
     height: calc(var(--spacing) * 11);
   }
@@ -660,6 +657,11 @@
       float: left;
     }
   }
+  .md\:float-right {
+    @media (width >= 48rem) {
+      float: right;
+    }
+  }
   .md\:mr-6 {
     @media (width >= 48rem) {
       margin-right: calc(var(--spacing) * 6);
@@ -668,6 +670,11 @@
   .md\:mb-6 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 6);
+    }
+  }
+  .md\:ml-6 {
+    @media (width >= 48rem) {
+      margin-left: calc(var(--spacing) * 6);
     }
   }
   .md\:flex {
@@ -683,6 +690,11 @@
   .md\:max-h-\[400px\] {
     @media (width >= 48rem) {
       max-height: 400px;
+    }
+  }
+  .md\:max-h-\[480px\] {
+    @media (width >= 48rem) {
+      max-height: 480px;
     }
   }
   .lg\:order-2 {
